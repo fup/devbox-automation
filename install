@@ -1,5 +1,0 @@
-#!/bin/bash
-
-yum install -y puppet facter
-
-puppet apply manifest/init.pp

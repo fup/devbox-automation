@@ -1,0 +1,5 @@
+# To install
+copy the following line, paste/run: (with thanks to wayneeseguin)
+```
+bash -s stable < <(curl -s https://raw.github.com/fup/puppet-devbox/master/bin/install)
+```

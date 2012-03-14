@@ -1,0 +1,7 @@
+#!/bin/bash
+
+yum install -y puppet facter git
+cd /tmp
+git clone http://github.com/fup/puppet-devbox.git
+puppet apply puppet-devbox/manifest/init.pp
+
