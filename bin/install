@@ -1,7 +1,6 @@
 #!/bin/bash
 
 yum install -y puppet facter git
-cd /tmp
-git clone http://github.com/fup/puppet-devbox.git
-puppet apply puppet-devbox/manifest/init.pp
-
+(cd /tmp; git clone http://github.com/fup/puppet-devbox.git)
+(cd /tmp/puppet-devbox; git submodule init; git submodule update)
+(cd /tmp/puppet-devbox; puppet apply puppet-devbox/manifest/init.pp)
