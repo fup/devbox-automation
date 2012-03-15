@@ -32,3 +32,9 @@ rvm::define::version {'ruby-1.9.2':
   system   => 'true',
   ssl      => 'true',
 }
+
+# Install Vagrant/Veewee Gems
+rvm::devine::gem { ['vagrant', 'veewee']:
+  ensure       => 'present',
+  ruby_version => '1.9.2',
+}
